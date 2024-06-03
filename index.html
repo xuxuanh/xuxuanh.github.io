@@ -2,15 +2,16 @@
 <html>
 <header>
   <h1>Bilibili Top 50 JPOPs</h1>
-  
+
   <style>
     h1 {
-    background-color: ;
-      color: pink;
+      background-color: pink;
+      color: white;
       text-align: left;
     }
   </style>
 </header>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -22,37 +23,92 @@
   </h2>Top 50 JPOPs of the week</h2>
   <table>
     <tr>
-      <td><img src="https://t2.genius.com/unsafe/680x680/https%3A%2F%2Fimages.genius.com%2Fa8124b2c6e6245702850c18fc787c4cb.1000x1000x1.jpg" alt="Picture"></td>
+      <td><img
+          src="https://t2.genius.com/unsafe/680x680/https%3A%2F%2Fimages.genius.com%2Fa8124b2c6e6245702850c18fc787c4cb.1000x1000x1.jpg"
+          alt="Picture"></td>
       <td>
         <table>
           <tr>
-            <th>Track</th>
+            <th></th>
             <th>Title</th>
             <th>Artist</th>
-            <th>Album</th>
-            <th>Link</th>
+
+
           </tr>
           <tr>
             <td>1</td>
-            <td>夜に駆ける</td>
+            <td><a href="https://www.youtube.com/watch?v=vEyPvak2K9o">夜に駆ける</a></td>
             <td>YOASOBI</td>
-            <td>THE BOOK</td>
-            <td><a href="https://www.youtube.com/watch?v=vEyPvak2K9o">Link</a></td>
+
+            
           </tr>
         </table>
       </td>
     </tr>
   </table>
-  
+
   <style>
     body {
       color: white;
       text-align: center;
     }
-    
-
   </style>
   <script src="script.js"></script>
 </body>
+<style>
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .song-title {
+    font-weight: bold;
+  }
+
+  .song-artist {
+    font-style: italic;
+  }
+
+  .song-link {
+    color: blue;
+    text-decoration: none;
+  }
+
+  .song-link:hover {
+    text-decoration: underline;
+
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  body {
+    background-color: white;
+    color: black;
+  }
+  background-color: white;
+  text-color: black;
+  
+  }
+</style>
 
 </html>
