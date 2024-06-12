@@ -8,19 +8,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiliBili Top 50 JPOPs</title>
+    <title>Swiper Example</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
         .swiper-container {
             width: 100%;
             height: 100vh;
+            background: #fff; /* Set background color to white */
         }
         .swiper-slide {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             font-size: 24px;
-            background: #ddd;
+            background: #fff; /* Set background color to white */
+            text-align: center;
+            flex-direction: column;
+            padding-top: 20px; /* Add some padding at the top */
+        }
+        .swiper-slide a {
+            text-decoration: none;
+            color: #007BFF;
+            margin: 10px 0;
         }
         .swiper-button-next, .swiper-button-prev {
             color: #000;
@@ -31,7 +40,13 @@
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Page 1</div>
+            <div class="swiper-slide">
+                <div>1. <a href="https://youtu.be/v2Wzlrek7qg?si=jDKoNcUPxL90VnWw" target="_blank">halfmoon —King & Prince</a></div>
+                <div>2. <a href="https://youtu.be/mLW35YMzELE?si=DTVGFOzDzPRv6DOy" target="_blank">Bling-Bang-Bang-Born —Creepy Nuts</a></div>
+                <div>3. <a href="https://youtu.be/QjrkrVmC-8M?si=klgpDPw2GVus6H2i" target="_blank">ライラック —Mrs. Green Apple</a></div>
+                <div>4. <a href="https://youtu.be/OJLOqmz5IKE?si=6vPnMetuLzx3MTXh" target="_blank">ブルーシャワー —M!lk</a></div>
+                <div>5. <a href="https://youtu.be/5sT20edl02I?si=IsdlQ48IgR6i0a6A" target="_blank">Woke Up —XG</a></div>
+            </div>
             <div class="swiper-slide">Page 2</div>
             <div class="swiper-slide">Page 3</div>
             <div class="swiper-slide">Page 4</div>
@@ -56,7 +71,7 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
             autoplay: {
-                delay: 10000, // 15 seconds
+                delay: 15000, // 15 seconds
                 disableOnInteraction: false,
             },
             pagination: {
@@ -71,4 +86,3 @@
     </script>
 </body>
 </html>
-
